@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {font-family: cursive; background-color: rgb(219, 201, 161);font-size: large;}
+    * {box-sizing: border-box;}
+
+    input[type=text], input[type=tel], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #f3ebeb;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    input[type=submit] {
+        background-color: black;
+        color: aliceblue;
+        padding: 12px 20px;
+
+        border-radius: 4px;
+        cursor: pointer;
+        font-family: cursive;
+    }
+
+    input[type=submit]:hover {
+        background-color: aliceblue;
+        color: black;
+    }
+    .container1{
+        border-radius: 5px;
+        padding: 20px;
+        background-color: rgb(219, 201, 161);
+        font-size: large;
+    }
+    a:link{
+        text-decoration: none;
+    }
+    a:hover{
+        text-decoration:cyan;
+    }
+</style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+        <a class = "home_page" href="main.html"><img src="logo.jpg" alt="Home Page" width = "90px" height="70px" style="margin-bottom: -7px;"></a>
+        <a class = "about_page" href="about.html">About</a>
+        <a class="contact" href="contact.html">Book Appointment</a>
+        <a class="login" href="login.html">Log-IN</a> 
+    </div>
+</nav>
+<h2>Appointment Form</h2>
+<h3>Enter following patient details : </h3>
+<div class="container1">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" required name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" required name="lastname" placeholder="Your last name..">
+
+    <label for="country">Your Phone Number : </label>
+    <input type="tel" id="tel" name="tel" placeholder="Enter here.." required>
+     
+    <label for="docs">Speciality/ Doctor</label>
+    <select id="doc" name="docs">
+        <option value="abc">Dr. ABC (Neurology)</option>
+        <option value="def">Dr. DEF (General)</option>
+        <option value="ghi">Dr. GHI ()</option>
+        <option value="jkl">Dr. JKL ()</option>
+        <option value="mno">Dr. MNO ()</option>
+    </select>
+   
+
+    <label for="subject">What symptoms are you/patient sufferng?</label>
+    <textarea id="subject" name="subject" placeholder="Enter details.." style="height:200px" required></textarea>
+
+    <input class="submit" type="submit" value="Submit">
+  </form>
+</div>
+<!------<div class="footer" style="font-size: medium;">
+    <p>All trademarks, logos and names are properties of their respective owners. All Rights Reserved. © Copyright 2023 Trust-Estate Services Limited.</p>
+</div>---->
+
+</body>
+</html>
